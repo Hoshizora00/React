@@ -7,7 +7,7 @@ const Home = () => {
   const [selectedCountry, setSelectedCountry] = useState(null);
 
   useEffect(() => {
-    axios.get('https://nationnode.vercel.app/api')
+    axios.get('https://nationnode.vercel.app/')
       .then(response => {
         setCountries(response.data);
         const afghanistan = response.data.find(
